@@ -1,0 +1,14 @@
+Link: https://go-backend-ping.vercel.app/ping
+
+I deployed the Go backend from exercise 1.13. The app only has the /ping
+endpoint, so the main page / shows 404, which is expected.
+
+What I did:
+- I made a Dockerfile.vercel in the backend folder. I basically copied my
+  Dockerfile from 1.13.
+- On vercel.com I connected my GitHub account and picked my exercises
+  repository. I set the backend folder as the root directory.
+- I chose the Container preset so Vercel builds the image from my
+  Dockerfile, and then I clicked deploy.
+
+After the deploy finished, /ping answered with pong, so it works.
